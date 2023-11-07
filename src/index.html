@@ -55,19 +55,26 @@
         </div>
 
         <!-- Nota para o site -->
+        
         <div class="flex justify-center items-center flex-col my-14">
             <p class="font-bold font-md md:font-lg">Avalie meu site!</p>
-            
-            <form action="https://formsubmit.co/fernando.oliver0216@gmail.com" method="post" class="flex flex-col gap-3 mt-6 w-52 md:w-80">
-                
-                <label for="text" class="font-bold font-fira">Seu Nome</label>
-                <input type="text" required="text" placeholder="Nome" class="border-b-2 border-gray-900 focus:outline-none">
-                
-                <label for="" class="font-bold font-fira">Nota</label>
-                <input type="number" required="number" placeholder="Deixe sua nota" class="border-b-2 border-gray-900 focus:outline-none">
-                
+    
+                <form target="_blank" action="https://formsubmit.co/fernando.oliver0216@gmail.com" method="POST" class="flex flex-col gap-4 mt-6 w">
+                <div class="form-group">
+                <div class="form-row flex flex-col gap-4">
+                    <div class="col">
+                    <input type="text" name="name" class="form-control border-b-2 border-gray-900 focus:outline-none" placeholder="Nome" required>
+                    </div>
+                    <div class="col">
+                    <input type="number" name="number" class="form-control border-b-2 border-gray-900 focus:outline-none" placeholder="Nota" required="number">
+                    </div>
+                </div>
+                </div>
+                <div class="form-group">
+                <textarea placeholder="Criticas" class="form-control border-b-2 border-gray-900 h-10" name="message" rows="2" required></textarea>
+                </div>
                 <div class="flex justify-center items-center">
-                    <input type="submit" class="bg-red-600 text-bold text-white w-14 rounded-sm hover:bg-black duration-1000">
+                    <button type="submit" class="btn btn-lg btn-dark btn-block bg-red-600 text-bold text-white w-14 rounded-sm hover:bg-black duration-1000">Enviar</button>
                 </div>
                
             </form>
