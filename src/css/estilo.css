@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* logo */
+    .img_logo {
+        @apply w-[70px] h-[70px] animate-pulse;
+    }
+
+    /* Seção dos cards */
+    .section_cards {
+        @apply w-[100%] flex flex-col justify-center items-center md:grid md:grid-cols-3 md:justify-items-center lg:grid-cols-3
+    }
+    
+    /* Cards */
+    .cars {
+        @apply w-[80%] flex items-center justify-center flex-col mt-16 rounded-md;
+    }
+
+    /* Imagens Cards */
+    .img_cars {
+        @apply w-64 h-72 bg-cover;
+    }
+
+    .img_smokey {
+        @apply w-[300px] h-[450px]
+    }
+
+    .infoJDM {
+        @apply w-[80%] flex justify-center items-center text-justify
+    }
+}
+
